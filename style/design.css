@@ -1,0 +1,71 @@
+/* font style */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* hero section start */
+.hero-container {
+  /* border: 2px solid tomato; */
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Raleway", serif;
+  background-color: rgba(229, 84, 115, 0.1);
+}
+.hero-content {
+  /* border: 2px solid black; */
+  /* padding: 50px; */
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 90px;
+}
+.hero-description {
+  /* border: 3px solid rgb(39, 39, 39); */
+  width: 50%;
+  /* margin-right: 90px; */
+}
+.hero-description h1 {
+  color: rgb(39, 39, 39);
+  /* font-family: Lato; */
+  font-size:3rem;
+  font-weight: 700;
+}
+.hero-description p{
+    color: rgba(39, 39, 39, 0.6);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 10px 0px ;
+}
+.hero-img {
+  /* border: 3px solid rgb(30, 255, 0); */
+  width: 50%;
+  
+}
+.btn {
+  background-color: rgb(229, 84, 115);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    margin: 0 auto;
+  }
+  .hero-content,
+  .hero-description {
+    flex-direction: column;
+  }
+  .hero-description{
+    width: 100%;
+  }
+  .hero-img{
+    width: 100%;
+  }
+}
