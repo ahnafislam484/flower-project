@@ -55,8 +55,8 @@
 /* second section start hear */
 .second-container {
   /* border: 2px solid red; */
-  max-width: 1400px;
-  /* height: 650px; */
+  max-width: 90%;
+
   margin: 0 auto;
   margin-top: 150px;
   margin-bottom: 100px;
@@ -86,34 +86,34 @@
 }
 .seccond-img {
   /* border: 2px solid green; */
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 90%;
-  min-height: 70vh;
   margin: 0 auto;
   gap: 40px;
 }
 .img-1 {
   /* border: 2px solid black; */
-  width: 33%;
+  width: 100%;
   height: 500px;
   border-radius: 300px 300px 0px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgba(167, 33, 98, 0.15);
+  margin-top: 20px;
 }
-.img-1 img,
-.img-2 img,
-.img-3 img {
-  width: 80%;
+.img-1 img {
+  width: 75%;
   height: 100%;
+  /* border: 2px dotted; */
+  
 }
-.img-2 {
-  background-color: rgba(5, 151, 160, 0.15);
+
+.img-two {
+  background-color: rgba(17, 165, 172, 0.15);
 }
-.img-3 {
+.img-third {
   background-color: rgba(71, 125, 17, 0.15);
 }
 
@@ -181,7 +181,6 @@
   text-align: center;
   margin-left: 100px;
   margin-right: 100px;
-  
 }
 .four-title h4 {
   font-size: 2.2rem;
@@ -200,6 +199,51 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* five page */
+.five-container {
+  /* border: 2px dotted; */
+  max-width: 100%;
+  margin-top: 100px;
+}
+
+.five-title {
+  /* border: 2px solid red; */
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.five-title h4 {
+  color: rgb(39, 39, 39);
+  font-size: 40px;
+  font-weight: 800;
+}
+.five-title p {
+  color: rgba(39, 39, 39, 0.6);
+
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.five-img {
+  width: 90%;
+  margin: 0 auto;
+  /* border: 2px double green; */
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.image img {
+  /* border: 3px solid steelblue; */
+  width: 90%;
+  height: 100%;
 }
 
 /* for mobile */
@@ -225,7 +269,9 @@
   .second-title,
   .four-title,
   .third-container,
-  .four-img {
+  .four-img,
+  .five-title,
+  .five-img {
     width: 100%;
   }
   .third-container,
@@ -237,5 +283,11 @@
   }
   .img-1 {
     width: 100%;
+  }
+  .image img{
+    width: 100%;
+  }
+  .five-img {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
