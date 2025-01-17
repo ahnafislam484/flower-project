@@ -128,6 +128,7 @@
   justify-content: center;
   background-color: rgba(229, 84, 115, 0.1);
   border-radius: 8px;
+  margin-bottom: 50px;
 }
 .third-content {
   /* border:2px solid black ; */
@@ -153,13 +154,63 @@
   font-weight: 400;
 }
 
+/* four page start */
+.four-container {
+  /* border: 2px solid red; */
+  max-width: 100%;
+  /* height: 50vh; */
+  background-color: rgba(229, 84, 115, 0.05);
+}
+.four-content {
+  /* border: 2px solid rgb(69, 237, 23); */
+
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 100px; */
+}
+.four-title {
+  width: 50%;
+  /* border: 2px dotted; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  
+}
+.four-title h4 {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+.four-title p {
+  color: rgba(39, 39, 39, 0.6);
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 24px 0 30px 0;
+}
+.four-img {
+  /* border: 2px dotted; */
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* for mobile */
 @media screen and (max-width: 576px) {
   body {
     margin: 0 10px;
   }
   .hero-content,
   .seccond-img,
-  .third-content {
+  .third-content,
+  .four-content {
     flex-direction: column;
   }
   .third-content {
@@ -171,8 +222,15 @@
   }
 
   .hero-description,
-  .second-title {
+  .second-title,
+  .four-title,
+  .third-container,
+  .four-img {
     width: 100%;
+  }
+  .third-container,
+  .four-content {
+    max-width: 100%;
   }
   .hero-img {
     width: 100%;
