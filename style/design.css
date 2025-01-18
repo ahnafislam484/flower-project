@@ -355,7 +355,7 @@
   .third-container,
   .four-img,
   .five-title,
-  .five-img,
+  /* .five-img, */
   .six-content {
     width: 100%;
   }
@@ -374,8 +374,12 @@
   }
   .image img {
     width: 100%;
+    
   }
+  
   .five-img {
     grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    gap: 50px;
   }
 }
